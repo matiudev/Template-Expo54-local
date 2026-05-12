@@ -1,108 +1,81 @@
-# 📱 NombreApp
+# [EMOJI] NombreApp
+<!-- Elegí un emoji que represente la app y reemplazá NombreApp por el nombre real del proyecto -->
 
 > Descripción corta y directa de qué hace la app y para quién es.
+<!-- Una sola línea. Ej: "App móvil para gestión de ventas para pequeños negocios." -->
 
 ---
 
 ## 📖 Descripción
-
-Párrafo explicando el propósito principal de la app, el problema que resuelve y sus características más destacadas. Puede mencionar el modelo de datos clave o el enfoque técnico si es relevante.
+<!-- Analizá el proyecto completo y escribí 1-2 párrafos explicando:
+     - Qué problema resuelve
+     - A quién está dirigido
+     - El enfoque técnico principal (si tiene algo destacable como arquitectura, modelo de datos, etc.) -->
 
 ---
 
 ## ✨ Características Principales
+<!-- Analizá las features del proyecto y agrupá en máximo 5 bloques temáticos.
+     Cada bloque tiene un título general con ícono y sus sub-características como lista.
+     Ejemplo de estructura:
 
-### 🏦 Característica 1
+### 🏦 Nombre del bloque
 - Sub-característica A
 - Sub-característica B
 - Sub-característica C
-
-### 💰 Característica 2
-- Sub-característica A
-- Sub-característica B
-- Sub-característica C
-
-### 🗂️ Característica 3
-- Sub-característica A
-- Sub-característica B
-- Sub-característica C
-
-### 📊 Característica 4
-- Sub-característica A
-- Sub-característica B
-- Sub-característica C
-
-### 🔐 Característica 5
-- Sub-característica A
-- Sub-característica B
-- Sub-característica C
+-->
 
 ---
 
 ## 🛠️ Stack Tecnológico
+<!-- Revisá package.json y listá las dependencias principales.
+     Usá esta tabla como base y completá o eliminá filas según corresponda: -->
 
 | Categoría | Tecnología | Versión |
 |-----------|-----------|---------|
-| Framework | React Native + Expo | - |
-| Backend / DB | Supabase | - |
-| Estado Global | Zustand | - |
-| Navegación | React Navigation | - |
-| Estilos | NativeWind | - |
+| Framework | <!-- Ej: React Native + Expo / React + Vite / Next.js --> | - |
+| Backend / DB | <!-- Ej: Supabase / Firebase / Sin backend --> | - |
+| Estado Global | <!-- Ej: Zustand / Redux / Context API --> | - |
+| Navegación | <!-- Ej: React Navigation / React Router / Next.js Router --> | - |
+| Estilos | <!-- Ej: NativeWind / Tailwind CSS / CSS Modules --> | - |
+<!-- Agregá las filas que necesites según el proyecto -->
 
 ---
 
 ## 📁 Estructura del Proyecto
+<!-- Analizá la carpeta src/ (o la raíz si no hay src/) y generá el árbol de carpetas.
+     No listes archivos individuales, solo carpetas con una descripción corta de cada una.
+     Seguí este formato:
 
-```
 NombreApp/
 ├── src/
-│   ├── components/        # Componentes globales reutilizables
-│   ├── constants/         # Colores, íconos, constantes globales
-│   ├── feature/           # Módulos por dominio (Feature-Based)
-│   │   ├── auth/
-│   │   ├── dashboard/
-│   │   └── .../
-│   ├── lib/               # Configuración de servicios externos (Supabase, etc.)
-│   ├── navigation/        # Navegadores y stacks
-│   ├── screens/           # Pantallas principales de los tabs
-│   ├── theme/             # Contexto y definiciones de tema
-│   └── utils/             # Funciones utilitarias
-├── assets/                # Imágenes, íconos, splash screen
-├── App.js
-├── app.json
+│   ├── components/    # Descripción
+│   ├── feature/       # Descripción
+│   │   ├── modulo1/
+│   │   └── modulo2/
+│   ├── pages/         # Descripción (si aplica)
+│   ├── hooks/         # Descripción (si aplica)
+│   ├── utils/         # Descripción (si aplica)
+│   └── ...
+├── public/            # (si aplica)
 └── package.json
-```
+-->
 
 ---
 
 ## 🧭 Navegación
-
-```
-RootNavigator
-├── AuthStack (sin sesión)
-│   ├── LoginScreen
-│   └── RegisterScreen
-│
-└── AppStack (con sesión)
-    ├── TabNavigator (bottom tabs)
-    │   ├── 🏠 Tab 1
-    │   ├── 📊 Tab 2
-    │   └── 👤 Tab 3
-    │
-    └── Stack Screens
-        ├── PantallaA
-        ├── PantallaB
-        └── PantallaC
-```
+<!-- Si el proyecto tiene navegación entre pantallas/rutas, analizá el sistema de navegación y generá un árbol.
+     Si es mobile: mostrá AuthStack / AppStack / TabNavigator según corresponda.
+     Si es web: mostrá las rutas principales (React Router, Next.js pages, etc.)
+     Si no tiene navegación compleja, eliminá esta sección. -->
 
 ---
 
 ## 🚀 Instalación y Configuración
 
 ### Prerrequisitos
-- **Node.js** >= 18
-- **Expo CLI**: `npm install -g expo-cli`
-- **Expo Go** en tu teléfono o un simulador iOS/Android
+<!-- Listá solo lo necesario para correr el proyecto.
+     Ej: Node.js >= 18, Expo CLI, cuenta en Supabase, etc. -->
 
 ### Pasos
 
@@ -118,15 +91,20 @@ npm install
 cp .env.example .env
 
 # 4. Iniciar el servidor de desarrollo
-npx expo start
+# Revisá package.json → scripts y usá el comando correcto
+npm run dev
 ```
 
 ### Variables de Entorno
+<!-- Revisá el proyecto en busca de variables de entorno (.env.example, .env, referencias en el código).
+     Listá solo las necesarias para correr el proyecto, sin valores reales.
+     Si no usa variables de entorno, eliminá esta sección.
 
 ```env
-EXPO_PUBLIC_SUPABASE_URL=https://tu-proyecto.supabase.co
-EXPO_PUBLIC_SUPABASE_ANON_KEY=tu-anon-key
+VARIABLE_1=
+VARIABLE_2=
 ```
+-->
 
 ---
 
