@@ -9,8 +9,6 @@ const TabOneScreen = () => {
   const [visibleModalGenerico, setVisibleModalGenerico] = useState(false);
   const [selectGenerico, setSelectGenerico] = useState(null);
 
-  console.log(selectGenerico);
-
   return (
     <ContainerTabs>
       <Header titulo="TabOneScreen" />
