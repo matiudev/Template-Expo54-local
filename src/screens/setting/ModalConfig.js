@@ -3,9 +3,6 @@ import { View, TouchableOpacity, Text, Alert, Modal } from "react-native";
 import { useState } from "react";
 import { useTheme } from "../../theme/useTheme";
 import * as Updates from "expo-updates";
-import { useVentasStore } from "../../store/useVentasStore";
-import { useProductosStore } from "../../store/useProductosStore";
-import { useClientesStore } from "../../store/useClientesStore";
 
 const ModalConfig = ({ visibleModalConfig, onClose }) => {
   const { colors } = useTheme();
@@ -84,9 +81,6 @@ const ModalConfig = ({ visibleModalConfig, onClose }) => {
   };
 
   const vaciarEstados = async () => {
-    await useVentasStore.getState().removeAllVentas();
-    await useProductosStore.getState().removeAllProductos();
-    await useClientesStore.getState().removeAllClientes();
   };
 
   const FUNCIONES = [
